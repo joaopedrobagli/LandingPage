@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} 
+
+body{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    background-color:  #8cbc8f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index:10;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding 1rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navlink{
+    display:flex;
+    list-style:none;
+    gap: 2rem;
+}
+
+.navlink a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navlink a:hover{
+    color:#5a8f5d;
+}
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.4)),
+    url('https://images.unsplash.com/photo-1734800595283-6de6140d2e90?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=876')
+    center / cover;
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: #fff;
+}
+
+.hero-conteudo{
+    Display:flex;
+    flex-direction: column;
+    align-items:center;
+    background: rgba(0,0,0,0.3);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-conteudo h1{
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+}
+
+.hero-conteudo p{
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom:2rem;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background-color: #5a8f5d;
+    color: #fff;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.sobre{
+    padding:5rem 2rem;
+    background-color: #f9f9f9;
+    text-align:center;
+}
+
+.sobre h2{
+    font-size: 2.5rem;
+    margin-bottom:1rem;
+    color:#5a8f5d;
+}
+
+.sobre p{
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333333;
+}
+
+.produtos{
+    padding:5rem 2rem;
+    background-color: #fff;
+}
+
+.produtos h2{
+    font-size: 2.5rem;
+    text-align:center;
+    margin-bottom: 3rem;
+    color: #5a8f5d;
+}
+
+.produtos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produto-card{
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius:10px;
+    text-align:center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.produto-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.produto.icon{
+    font-size:4rem;
+    margin-bottom:1rem;
+}
+
+.preço{
+    font-weight:bold;
+    color:#5a8f5d;
+    font-size: 1.5rem;
+}
+
+.contato{
+    padding: 5rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.contato h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom:2rem;
+    color: #5a8f5d;
+}
+
+.contato-info{
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.mapa{
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.mapa iframe{
+    display:block;
+}
+
+.footer{
+background-color: #8cbc8f;
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+    margin-top: 3rem;
+}
